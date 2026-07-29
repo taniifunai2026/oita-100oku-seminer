@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大分県 100億創出経営者ネットワーク2026</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@600;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- AOS CSS (スクロールアニメーション) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        /* 燃えるような赤を基調としたカラーパレット（ピンク成分を排除） */
+                        fire: {
+                            50: '#fef2f2',
+                            100: '#fee2e2',
+                            500: '#ef4444',
+                            600: '#dc2626', // 鮮やかな燃える赤
+                            700: '#b91c1c', // 重厚な情熱の赤
+                            800: '#991b1b',
+                            900: '#7f1d1d',
+                        },
+                        ember: {
+                            50: '#fff7ed',  // 下地用の温かいクリーム（脱ピンク）
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                        },
+                        amberGold: {
+                            400: '#fbbf24', // 輝くイエローゴールド
+                            500: '#f59e0b', // ボタン用アクセント
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['"Noto Serif JP"', 'serif'],
+                        sans: ['"Noto Sans JP"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #fff7ed; /* 温かいクリーム地。ピンクみを除去 */
+            color: #1e293b;
+        }
+        .font-serif-jp {
+            font-family: 'Noto Serif JP', serif;
+        }
+        /* 燃えるようなエネルギッシュな赤のグラデーション（金→赤→濃赤で紫みを排除） */
+        .bg-gradient-fire {
+            background: linear-gradient(240deg, #eab308 0%, #dc2626 45%, #7f1d1d 100%);
+        }
+        .bg-gradient-subtle {
+            background: linear-gradient(180deg, #fff7ed 0%, #ffffff 100%);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased overflow-x-hidden">
+
+    <!-- ============================== -->
+    <!-- Header / Hero Section          -->
+    <!-- ============================== -->
+    <header class="relative bg-gradient-fire text-white overflow-hidden pt-5 pb-16 md:pb-24 shadow-2xl">
+        <!-- 情熱・エネルギーを感じさせるドット背景 -->
+        <div class="absolute inset-0 opacity-15 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:20px_20px]"></div>
+
+        
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            
+            <!-- 【修正】左上の大分県ロゴ ＆ 主催表示バー（rounded-fullを排除し角丸ですっきり整音） -->
+            <div class="flex items-center justify-between mb-8 md:mb-12 border-b border-white/20 pb-4">
+                <a href="https://www.pref.oita.jp/" target="_blank" rel="noopener noreferrer" 
+                class="inline-flex items-center space-x-2.5 bg-white/95 hover:bg-white shadow-md transition duration-200 border border-white/50 group">
+                    <img src="./onsenken2-3yoko.jpg" alt="大分県" class="h-12 w-auto rounded object-contain">
+  
+                </a>
+            </div>
+            
+<!-- 【修正】「主催：大分県」バッジ（角丸カード風＋ゴールドタグ型で重厚感を演出） -->
+                <div class="inline-flex  items-stretch sm:items-center bg-slate-900/80 border border-amberGold-400/80 rounded-xl overflow-hidden shadow-2xl backdrop-blur-md mb-8">
+                    <div class="bg-amberGold-400 text-slate-950 text-xs sm:text-sm font-black px-4 py-2 flex items-center justify-center uppercase tracking-wider">
+                        <svg class="w-4 h-4 mr-1.5 shrink-0 text-slate-900" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                        大分県主催
+                    </div>
+                    <div class="text-xs sm:text-sm font-bold tracking-wide text-amber-100 px-5 py-2.5 sm:py-2 text-center">
+                        中堅・100億企業創出セミナー
+                    </div>
+                </div>
+
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-black font-serif-jp tracking-tight text-white mb-6 leading-tight drop-shadow-lg">
+                NEXT STAGE<br>VISIONARY'S CLUB
+            </h1>
+
+            <p class="text-base sm:text-lg md:text-xl text-orange-100 max-w-3xl mx-auto font-medium leading-relaxed mb-10 drop-shadow">
+                大分経済の未来を燃え上がらせるトップリーダーが一堂に結集。<br class="hidden sm:inline">
+                行政・地域牽引企業とともに挑む、売上100億円企業創出に向けた熱き成長戦略。
+            </p>
+
+            <!-- 開催基本情報カード -->
+            <div class="bg-white text-slate-900 rounded-2xl p-6 md:p-8 max-w-2xl mx-auto shadow-2xl backdrop-blur-md mb-10 text-left border-2 border-amberGold-400">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                    <!-- 日時 & 参加費 -->
+                    <div class="flex items-start space-x-4 border-b md:border-b-0 md:border-r border-slate-200 pb-5 md:pb-0 md:pr-6">
+                        <div class="w-12 h-12 rounded-xl bg-fire-100 flex items-center justify-center text-fire-700 shrink-0 mt-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                        </div>
+                        <div>
+                            <div class="flex items-center space-x-2 mb-1">
+                                <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">開催日時</p>
+                                <span class="inline-block bg-fire-700 text-white text-xs font-extrabold px-2 py-0.5 rounded">参加費 無料</span>
+                            </div>
+                            <p class="text-2xl font-black text-slate-900 tracking-tight">2026.10.5<span class="text-base font-bold text-slate-700">（月）</span></p>
+                            <p class="text-sm font-bold text-slate-800 mt-1">13:00〜16:30 <span class="text-xs font-semibold text-slate-500">（開場 12:30）</span></p>
+                        </div>
+                    </div>
+
+                    <!-- 会場 & 住所・URL -->
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 rounded-xl bg-fire-100 flex items-center justify-center text-fire-700 shrink-0 mt-1">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                        </div>
+                        <div class="space-y-1">
+                            <p class="text-xs font-bold text-slate-500 uppercase tracking-wider">会場</p>
+                            <p class="text-lg font-black text-slate-900 leading-snug">大分銀行 宗麟館</p>
+                            <p class="text-sm font-bold text-fire-700">大会議室（5F）</p>
+                            <p class="text-xs text-slate-600 font-medium pt-1">〒870-0823 大分市東大道1丁目9番1号</p>
+                            <a href="https://www.oitabank.co.jp/atm/sorinkan/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-xs font-bold text-sky-700 hover:text-sky-900 underline mt-1">
+                                会場Webサイト（マップ）
+                                <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 対象者（カード下部に明確に配置） -->
+                <div class="mt-6 pt-5 border-t border-slate-200 flex items-start space-x-3">
+                    <span class="bg-slate-100 text-slate-700 border border-slate-300 text-xs font-bold px-2.5 py-1 rounded-md shrink-0">対象者</span>
+                    <p class="text-xs sm:text-sm font-bold text-slate-800 leading-relaxed">
+                        県内中小企業経営者（経営幹部）、支援機関等
+                    </p>
+                </div>
+            </div>
+
+            <!-- CTAボタン（インパクトのあるゴールドイエロー） -->
+            <div>
+                <a href="https://seminar-app.com/cer-0000000222" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-10 py-5 text-xl font-black rounded-xl text-slate-900 bg-amberGold-400 hover:bg-amberGold-500 transition duration-300 shadow-2xl hover:scale-105 transform w-full sm:w-auto">
+                    経営フォーラムに申し込む（無料）
+                    <svg class="w-6 h-6 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+                <p class="text-xs text-orange-100 mt-3 font-medium">※外部お申込みページへ遷移します（事前申込制）</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ============================== -->
+    <!-- News Release Section           -->
+    <!-- ============================== -->
+    <section class="py-12 bg-white border-b border-ember-200" >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-center justify-between border-b-2 border-fire-600 pb-3 mb-6">
+                <div class="flex items-center space-x-3">
+                    <span class="bg-fire-600 text-white font-bold text-xs px-2.5 py-1 rounded">NEWS RELEASE</span>
+                    <h2 class="text-xl font-bold font-serif-jp text-slate-900">ニュースリリース・お知らせ</h2>
+                </div>
+            </div>
+            
+            <div class="space-y-4">
+                <!-- ニュース記事 1 -->
+                <article class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-ember-50/40 hover:bg-ember-100/50 transition border border-ember-100">
+                    <div class="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
+                        <time class="text-xs font-bold text-slate-500">2026.09.01</time>
+                        <span class="inline-block bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded w-max">プレスリリース</span>
+                        <a href="#" class="text-sm font-bold text-slate-800 hover:text-fire-600 transition line-clamp-1">
+                            「100億創出経営者ネットワーク2026」の特設サイトを開設いたしました。
+                        </a>
+                    </div>
+                    <!-- <a href="#" class="text-xs font-bold text-fire-600 hover:underline shrink-0 flex items-center">
+                        詳細を見る <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a> -->
+                </article>
+
+                <!-- ニュース記事 2 -->
+                <!-- <article class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-ember-50/40 hover:bg-ember-100/50 transition border border-ember-100">
+                    <div class="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
+                        <time class="text-xs font-bold text-slate-500">2026.08.20</time>
+                        <span class="inline-block bg-fire-100 text-fire-700 text-[10px] font-bold px-2 py-0.5 rounded w-max">お知らせ</span>
+                        <a href="#" class="text-sm font-bold text-slate-800 hover:text-fire-600 transition line-clamp-1">
+                            セミナー開催直前インタビュー動画の特設ページを順次公開予定です。
+                        </a>
+                    </div>
+                    <a href="#" class="text-xs font-bold text-fire-600 hover:underline shrink-0 flex items-center">
+                        詳細を見る <svg class="w-3 h-3 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </a>
+                </article> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Concept Section                -->
+    <!-- ============================== -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14" data-aos="fade-up">
+                <p class="text-fire-600 font-extrabold tracking-widest text-sm uppercase mb-2">VISION & CHALLENGE</p>
+                <h2 class="text-2xl sm:text-4xl font-serif-jp font-bold text-slate-900">
+                    大分の未来を担う<span class="text-fire-600">100億企業へ</span>
+                </h2>
+                <div class="w-20 h-1 bg-fire-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- 01 -->
+                <div class="bg-ember-50/60 border border-ember-200 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <div class="w-12 h-12 bg-fire-600 text-white rounded-xl font-black text-xl flex items-center justify-center mb-6">01</div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-3">直面する危機と成長の壁</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            急激な人口減少により、地域経済の縮小は刻一刻と進んでいます。この危機を打開するには、地域に魅力的な雇用を生み出し、持続的な賃上げを牽引する強力な「中核企業」の存在が不可欠です。しかし多くの企業が、売上10億〜50億円規模からのスケールアップにおいて、厚い「成長の壁」に行く手を阻まれてしまいます。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 02 -->
+                <div class="bg-ember-50/60 border border-ember-200 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <div class="w-12 h-12 bg-fire-600 text-white rounded-xl font-black text-xl flex items-center justify-center mb-6">02</div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-3">「100億」がもたらすもの</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            地域の中小企業の成長は、域外から稼ぎ、その資金を地域の雇用・取引先・経済へ還元するという、地域経済を力強く回すエンジンとなることを意味します。そんな「100億企業」を目指す皆さんは、大分の未来の希望なのです。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 03 -->
+                <div class="bg-ember-50/60 border border-ember-200 p-8 rounded-2xl shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <div class="w-12 h-12 bg-fire-600 text-white rounded-xl font-black text-xl flex items-center justify-center mb-6">03</div>
+                        <h3 class="font-bold text-lg text-slate-900 mb-3">壁を突破する共創の場</h3>
+                        <p class="text-sm text-slate-700 leading-relaxed">
+                            成長の壁を突破するために必要なのは、単なる精神論ではなく、先人の実践的な知見と、ともに高みを目指す経営者同士の強固なネットワークです。行政やトップランナー企業とタッグを組み、100億円企業への道筋をともに切り拓くための実践的な共創の場を提供します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Interview Movie Section        -->
+    <!-- ============================== -->
+    <section class="py-16 md:py-20 bg-slate-900 text-white" >
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-amberGold-400 font-extrabold tracking-widest text-sm uppercase mb-2">PRE-EVENT MOVIE</p>
+                <h2 class="text-2xl sm:text-4xl font-serif-jp font-bold text-white">セミナー開催直前 インタービュー動画</h2>
+                <div class="w-20 h-1 bg-amberGold-400 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-300 text-sm sm:text-base mt-4 max-w-2xl mx-auto">
+                    登壇者や地域牽引企業のリーダーによる、セミナー開催へ向けた期待と熱いメッセージを込めた特別インタビュー動画を順次公開いたします。
+                </p>
+            </div>
+
+            <!-- 動画枠（Coming Soon! 表示） -->
+            <div class="max-w-3xl mx-auto"  data-aos-delay="200">
+                <div class="relative aspect-video rounded-2xl overflow-hidden bg-slate-800 border-2 border-slate-700 shadow-2xl flex items-center justify-center group">
+                    <!-- 背景のうっすらとしたイメージ・グリッド -->
+                    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    
+                    <!-- 中央のComing Soonメッセージ -->
+                    <div class="relative z-10 text-center px-4">
+                        <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 rounded-full bg-fire-600/30 border-2 border-fire-500 flex items-center justify-center backdrop-blur-sm">
+                            <svg class="w-8 h-8 md:w-10 md:h-10 text-amberGold-400 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.841z"></path>
+                            </svg>
+                        </div>
+                        <span class="inline-block bg-amberGold-400 text-slate-900 text-xs md:text-sm font-black px-4 py-1 rounded-full uppercase tracking-wider mb-2">Coming Soon!</span>
+                        <h3 class="text-xl md:text-2xl font-bold text-white">動画公開まで楽しみにお待ちください</h3>
+                        <p class="text-xs md:text-sm text-slate-400 mt-2">※近日中に公開予定です（順次アップロードされます）</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Speakers Section                -->
+    <!-- ============================== -->
+    <section class="py-16 md:py-20 bg-gradient-subtle border-y border-ember-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14" data-aos="fade-up">
+                <p class="text-fire-600 font-extrabold tracking-widest text-sm uppercase mb-2">SPEAKERS & GUESTS</p>
+                <h2 class="text-2xl sm:text-4xl font-serif-jp font-bold text-slate-900">登壇者・特別ゲスト</h2>
+                <div class="w-20 h-1 bg-fire-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white border border-ember-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
+                    <div>
+                        <span class="inline-block bg-fire-100 text-fire-700 text-xs px-3 py-1 rounded-full font-bold mb-4">来賓・開会挨拶</span>
+                        <h3 class="text-xl font-black text-slate-900 mb-1">大分県 副知事</h3>
+                        <p class="text-xs font-semibold text-slate-500 mb-4">大分県庁</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">大分県における次世代産業振興のビジョンと、地域を牽引する経営者への熱い期待・支援姿勢を表明いただきます。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-ember-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
+                    <div>
+                        <span class="inline-block bg-fire-100 text-fire-700 text-xs px-3 py-1 rounded-full font-bold mb-4">行政施策講演</span>
+                        <h3 class="text-xl font-black text-slate-900 mb-1">中小企業庁 担当官</h3>
+                        <p class="text-xs font-semibold text-slate-500 mb-4">経済産業省 中小企業庁（※調整中）</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">国が推進する中堅・中小企業の規模拡大支援策や、地域経済牽引企業の最新政策トレンドについて直接解説いただきます。</p>
+                    </div>
+                </div>
+
+                <div class="bg-white border border-ember-200 rounded-2xl p-6 shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
+                    <div>
+                        <span class="inline-block bg-fire-100 text-fire-700 text-xs px-3 py-1 rounded-full font-bold mb-4">地域企業登壇</span>
+                        <h3 class="text-xl font-black text-slate-900 mb-1">〇〇株式会社 様</h3>
+                        <p class="text-xs font-semibold text-slate-500 mb-4">大分県牽引企業（※ご回答確認中）</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">地元大分を代表するトップランナーとして、持続的成長における現場のリアルと未来への熱い展望を語っていただきます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Program / Timetable Section     -->
+    <!-- ============================== -->
+    <section class="py-16 md:py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-14">
+                <p class="text-fire-600 font-extrabold tracking-widest text-sm uppercase mb-2">TIMETABLE</p>
+                <h2 class="text-2xl sm:text-4xl font-serif-jp font-bold text-slate-900">当日のプログラム</h2>
+                <div class="w-20 h-1 bg-fire-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="space-y-6">
+                <!-- 13:05 -->
+                <div class="flex flex-col md:flex-row bg-ember-50/50 border-l-4 border-fire-600 p-6 rounded-r-2xl border-y border-r border-ember-200">
+                    <div class="md:w-1/4 mb-2 md:mb-0">
+                        <span class="text-fire-600 font-black text-lg">13:05 -</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">オープニングメッセージ</h3>
+                        <p class="text-sm text-slate-600">登壇者：中小企業庁 山本様</p>
+                    </div>
+                </div>
+
+                <!-- 13:20 -->
+                <div class="flex flex-col md:flex-row bg-ember-50/50 border-l-4 border-fire-600 p-6 rounded-r-2xl border-y border-r border-ember-200">
+                    <div class="md:w-1/4 mb-2 md:mb-0">
+                        <span class="text-fire-600 font-black text-lg">13:20 -</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <div class="inline-block bg-fire-600 text-white text-xs font-bold px-2 py-0.5 rounded mb-2">基調講演</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">持続的成長を実現する100億企業へのロードマップ</h3>
+                        <p class="text-sm text-slate-600">登壇者：株式会社船井総合研究所 鈴木 圭介</p>
+                    </div>
+                </div>
+
+                <!-- 13:50 -->
+                <div class="flex flex-col md:flex-row bg-ember-50/50 border-l-4 border-fire-600 p-6 rounded-r-2xl border-y border-r border-ember-200">
+                    <div class="md:w-1/4 mb-2 md:mb-0">
+                        <span class="text-fire-600 font-black text-lg">13:50 -</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <div class="inline-block bg-fire-600 text-white text-xs font-bold px-2 py-0.5 rounded mb-2">経営者対談</div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">100億企業が実践した経営のセンターピン</h3>
+                        <p class="text-sm text-slate-600">
+                            登壇者：株式会社〇〇 〇〇様<br>
+                                株式会社船井総合研究所 鈴木 圭介
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 14:30 -->
+                <div class="flex flex-col md:flex-row bg-ember-50/50 border-l-4 border-fire-600 p-6 rounded-r-2xl border-y border-r border-ember-200">
+                    <div class="md:w-1/4 mb-2 md:mb-0">
+                        <span class="text-fire-600 font-black text-lg">14:30 -</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">休憩＋講師交流会（コーヒーブレイク）</h3>
+                    </div>
+                </div>
+
+                <!-- 14:50 -->
+                <div class="flex flex-col md:flex-row bg-ember-50/50 border-l-4 border-fire-600 p-6 rounded-r-2xl border-y border-r border-ember-200">
+                    <div class="md:w-1/4 mb-2 md:mb-0">
+                        <span class="text-fire-600 font-black text-lg">14:50 -</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <div class="inline-block bg-fire-600 text-white text-xs font-bold px-2 py-0.5 rounded mb-2">ワークセッション</div>
+                        <p class="text-sm text-slate-700 leading-relaxed mt-1">
+                            自社の現状や成長課題を整理し、グループディスカッションを通じて課題や成長の方向性を共有し、今後取り組むべきアクションを明確にします。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 15:50 -->
+                <div class="flex flex-col md:flex-row bg-ember-50/50 border-l-4 border-fire-600 p-6 rounded-r-2xl border-y border-r border-ember-200">
+                    <div class="md:w-1/4 mb-2 md:mb-0">
+                        <span class="text-fire-600 font-black text-lg">15:50 -</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">支援施策紹介</h3>
+                        <p class="text-sm text-slate-600">
+                            登壇者：独立行政法人 中小企業基盤整備機構<br>
+                                (株)日本政策金融公庫<br>
+                                大分県経営創造・金融課
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 16:10 - 16:30 -->
+                <div class="flex flex-col md:flex-row bg-ember-50/50 border-l-4 border-fire-600 p-6 rounded-r-2xl border-y border-r border-ember-200">
+                    <div class="md:w-1/4 mb-2 md:mb-0">
+                        <span class="text-fire-600 font-black text-lg">16:10 - 16:30</span>
+                    </div>
+                    <div class="md:w-3/4">
+                        <h3 class="text-lg font-bold text-slate-900 mb-1">クロージングメッセージ</h3>
+                        <p class="text-sm text-slate-600">登壇者：大分県 〇〇〇〇様</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Overview Table Section          -->
+    <!-- ============================== -->
+    <section class="py-16 md:py-20 bg-gradient-subtle border-t border-ember-200" >
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <p class="text-fire-600 font-extrabold tracking-widest text-sm uppercase mb-2">INFORMATION</p>
+                <h2 class="text-2xl sm:text-3xl font-serif-jp font-bold text-slate-900">開催概要</h2>
+                <div class="w-20 h-1 bg-fire-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="bg-white border border-ember-200 rounded-2xl overflow-hidden shadow-sm">
+                <dl class="divide-y divide-ember-100">
+                    <div class="grid grid-cols-1 md:grid-cols-3 p-5">
+                        <dt class="font-bold text-fire-600 text-sm">名称</dt>
+                        <dd class="md:col-span-2 text-sm text-slate-800 mt-1 md:mt-0">NEXT STAGE VISIONARY'S CLUB</dd>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 p-5 bg-ember-50/50">
+                        <dt class="font-bold text-fire-600 text-sm">開催日時</dt>
+                        <dd class="md:col-span-2 text-sm text-slate-800 font-bold mt-1 md:mt-0">2026年10月5日（月）13:00〜16:30（開場 12:30）</dd>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 p-5">
+                        <dt class="font-bold text-fire-600 text-sm">会場</dt>
+                        <dd class="md:col-span-2 text-sm text-slate-800 mt-1 md:mt-0">大分銀行 宗麟館 大会議室（5F）<br class="hidden md:block">〒870-0823 大分市東大道1丁目9番1号</dd>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 p-5 bg-ember-50/50">
+                        <dt class="font-bold text-fire-600 text-sm">参加対象</dt>
+                        <dd class="md:col-span-2 text-sm text-slate-800 mt-1 md:mt-0">県内中小企業経営者（経営幹部）、支援機関等</dd>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 p-5">
+                        <dt class="font-bold text-fire-600 text-sm">定員</dt>
+                        <dd class="md:col-span-2 text-sm text-slate-800 font-bold mt-1 md:mt-0">&nbsp;</dd>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-3 p-5 bg-ember-50/50">
+                        <dt class="font-bold text-fire-600 text-sm">参加費</dt>
+                        <dd class="md:col-span-2 text-sm text-fire-600 font-extrabold text-base mt-1 md:mt-0">無料</dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================== -->
+    <!-- Bottom CTA Section               -->
+    <!-- ============================== -->
+    <section class="py-20 bg-gradient-fire text-center text-white" >
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-4xl font-serif-jp font-bold mb-6 drop-shadow">
+                大分の未来を拓く<br class="sm:hidden" />経営者ネットワークへ
+            </h2>
+            <p class="text-orange-100 text-sm sm:text-base mb-8 leading-relaxed">
+                定員に達し次第、お申し込みを締め切らせていただきます。<br>
+                自社のスケール化・地域共創を目指す熱き経営者様のご参加をお待ちしております。
+            </p>
+            <div>
+                <a href="https://seminar-app.com/cer-0000000222" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-10 py-5 text-xl font-black rounded-xl text-slate-900 bg-amberGold-400 hover:bg-amberGold-500 transition duration-300 shadow-2xl hover:scale-105 transform w-full sm:w-auto">
+                    お申し込みフォームへ（外部サイト）
+                    <svg class="w-6 h-6 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs">
+        <!-- 大分県公式ホームページへのリンク・バナー -->
+        <div class="mb-6 flex justify-center">
+            <a href="https://www.pref.oita.jp/" target="_blank" rel="noopener noreferrer" 
+            class="inline-flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 px-4 py-2 
+            rounded-lg transition duration-200 border border-slate-700">
+                <img src="https://www.pref.oita.jp/uploaded/image/380.gif" alt="大分県" class="h-6 w-auto bg-white p-0.5 rounded">
+                <span class="text-xs font-bold text-white hover:underline flex items-center">
+                    大分県公式ホームページ
+                    <svg class="w-3 h-3 ml-1 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </span>
+            </a>
+        </div>
+        <p>&copy; 2026 大分県 100億企業ネットワーク運営事務局. All Rights Reserved.</p>
+    </footer>
+
+    <!-- AOS JS & 初期化 -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800, // アニメーションの完了速度（ミリ秒）
+            once: true,     // スクロール時にアニメーションを1回だけ再生
+            offset: 100     // アニメーションが開始される位置（px）
+        });
+    </script>
+</body>
+</html>
