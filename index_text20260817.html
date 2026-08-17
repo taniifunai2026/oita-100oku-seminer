@@ -74,7 +74,9 @@
         <div class="absolute  ">
             <img src="https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1920&q=80" 
                     alt="セミナー会場背景" 
-                    class="w-full h-full object-fit  opacity-15">
+                    class="w-full h-full object-fit  opacity-15
+                    [mask-image:linear-gradient(to_bottom,transparent_0px,black_10px,black_calc(100%-10px),transparent_100%)]
+         [-webkit-mask-image:linear-gradient(to_bottom,transparent_0px,black_10px,black_calc(100%-10px),transparent_100%)]">
         </div>
 
         <!-- 情熱・エネルギーを感じさせるドット背景 -->
@@ -86,11 +88,9 @@
             <div class="flex items-center justify-between mb-8 md:mb-12 border-b border-white/20 pb-4">
                 <a href="https://www.pref.oita.jp/" target="_blank" rel="noopener noreferrer" 
                 class="inline-flex items-center space-x-2.5 bg-white/95 hover:bg-white shadow-md transition duration-200 border border-white/50 group">
-                    <img src="./onsenken2-3yoko.jpg" alt="大分県" class="h-12 w-auto rounded object-contain">
+                    <img src="./img/onsenken2-3yoko.jpg" alt="大分県" class="h-12 w-auto rounded object-contain">
                 </a>
             </div>
-            
-
             
             <!-- 「主催：大分県」バッジ -->
             <div class="inline-flex items-stretch sm:items-center bg-slate-900/80 border border-amberGold-400/80 rounded-xl overflow-hidden shadow-2xl backdrop-blur-md mb-8">
@@ -249,6 +249,88 @@
     </section>
 
     <!-- ============================== -->
+    <!-- NEW!! Past Event Section      -->
+    <!-- ============================== -->
+    <section class="py-16 md:py-20 bg-gradient-subtle border-t border-ember-200">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <p class="text-fire-600 font-extrabold tracking-widest text-sm uppercase mb-2">PAST EVENT ARCHIVE</p>
+                <h2 class="text-2xl sm:text-4xl font-serif-jp font-bold text-slate-900">
+                    前回のイベントの様子
+                </h2>
+                <div class="w-20 h-1 bg-fire-600 mx-auto mt-4 rounded-full"></div>
+                <p class="text-slate-600 text-sm sm:text-base mt-4 max-w-2xl mx-auto font-medium">
+                    参加者の9割超が満足！高い評価と熱気に包まれた前回開催の模様をご紹介します。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <!-- セミナー写真枠 (左側) -->
+                <div class="lg:col-span-6" data-aos="fade-right">
+                    <div class="relative rounded-2xl overflow-hidden shadow-xl border-4 border-white bg-slate-100 group">
+                        <img src="./img/past_event.jpg" 
+                             alt="2/17 100億創出セミナーの様子" 
+                             class="w-full h-72 sm:h-80 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900/80 to-transparent p-4">
+                            <span class="inline-block bg-fire-600 text-white text-xs font-bold px-2.5 py-1 rounded">2026.2.17 開催</span>
+                            <p class="text-white text-sm font-bold mt-1">会場熱気に包まれた熱いセッションの模様</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- アンケート結果 (右側) -->
+                <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl border border-ember-200 shadow-md" data-aos="fade-left">
+                    <h3 class="text-lg font-bold text-slate-900 mb-6 flex items-center border-b border-ember-100 pb-3">
+                        <svg class="w-6 h-6 text-fire-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        参加者アンケート結果
+                    </h3>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- ① 満足度 -->
+                        <div class="flex flex-col items-center text-center p-4 rounded-xl bg-ember-50/50 border border-ember-100">
+                            <!-- SVG 円グラフ (97.4%) -->
+                            <div class="relative w-28 h-28 my-2">
+                                <svg class="w-full h-full transform " viewBox="0 0 36 36">
+                                    <path class="text-slate-200" stroke-width="3.8" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="text-fire-600" stroke-dasharray="97.4, 100" stroke-width="3.8" stroke-linecap="" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center flex-col">
+                                    <span class="text-xl font-black text-slate-900">97.4<span class="text-xs">%</span></span>
+                                </div>
+                            </div>
+                            <p class="text-xs font-bold text-slate-700 mt-1 leading-snug">
+                                イベントに満足された<br>方の割合
+                            </p>
+                        </div>
+
+                        <!-- ② 次回参加意向 -->
+                        <div class="flex flex-col items-center text-center p-4 rounded-xl bg-ember-50/50 border border-ember-100">
+                            <!-- SVG 円グラフ (92.1%) -->
+                            <div class="relative w-28 h-28 my-2">
+                                <svg class="w-full h-full transform" viewBox="0 0 36 36">
+                                    <path class="text-slate-200" stroke-width="3.8" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                    <path class="text-amberGold-500" stroke-dasharray="92.1, 100" stroke-width="3.8" stroke-linecap="" stroke="currentColor" fill="none" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                                </svg>
+                                <div class="absolute inset-0 flex items-center justify-center flex-col">
+                                    <span class="text-xl font-black text-slate-900">92.1<span class="text-xs">%</span></span>
+                                </div>
+                            </div>
+                            <p class="text-xs font-bold text-slate-700 mt-1 leading-snug">
+                                今後も参加したいと<br>回答された方の割合
+                            </p>
+                        </div>
+                    </div>
+
+                    <p class="text-xs text-slate-500 text-center mt-4 pt-3 border-t border-slate-100">
+                        ※2026年2月17日開催セミナー受講者アンケート集計結果より
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ============================== -->
     <!-- Interview Movie Section        -->
     <!-- ============================== -->
     <section class="py-16 md:py-20 bg-slate-900 text-white" >
@@ -298,9 +380,9 @@
     <div class="bg-white border border-ember-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="100">
         <div>
             <!-- h-48 を aspect-[4/3] または aspect-video に変更 -->
-            <div class="w-full aspect-[4/3] overflow-hidden bg-slate-100">
-                <img src="https://www.yomiuri.co.jp/media/2026/06/20260617-GYS1I00040-1.jpg" alt="大分県副知事 嶋川智尉 氏" class="w-full h-full object-cover object-top">
-<span class="absolute top-2 left-2 bg-red-600 text-white text-xs">※未許可</span>
+            <div class="w-full aspect-[4/3] overflow-hidden border-b border-ember-200">
+                <!-- <img src="https://www.yomiuri.co.jp/media/2026/06/20260617-GYS1I00040-1.jpg" alt="大分県副知事 嶋川智尉 氏" class="w-full h-full object-cover object-top"> -->
+                <img src="./img/onsenken4-2yoko.jpg" alt="大分県" class="w-full h-full object-contain p-4">
             </div>
             <div class="p-6">
                 <span class="inline-block bg-fire-100 text-fire-700 text-xs px-3 py-1 rounded-full font-bold mb-4">オープニングメッセージ</span>
@@ -317,8 +399,7 @@
     <div class="bg-white border border-ember-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="200">
         <div>
             <div class="w-full aspect-[4/3] overflow-hidden bg-slate-100">
-                <img src="https://www.shinshu-u.ac.jp/faculty/econlaw/lesson/upload_img/DSC_13.jpg" alt="中小企業庁 山本氏" class="w-full h-full object-cover object-top">
-<span class="absolute top-2 left-2 bg-red-600 text-white text-xs">※未許可</span>
+                <img src="./img/s_yamamoto_3.jpg" alt="中小企業庁 山本氏" class="w-full h-full object-cover object-top">
             </div>
             <div class="p-6">
                 <span class="inline-block bg-fire-100 text-fire-700 text-xs px-3 py-1 rounded-full font-bold mb-4">基調講座</span>
@@ -334,16 +415,16 @@
     <!-- 3. 経営者対談 -->
     <div class="bg-white border border-ember-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition flex flex-col justify-between" data-aos="fade-up" data-aos-delay="300">
         <div>
-            <div class="w-full aspect-[4/3] overflow-hidden bg-slate-100">
-                <img src="https://blog.yanaidenki.co.jp/wp-content/uploads/2026/01/L1120702-768x511.jpg" alt="経営者対談" class="w-full h-full object-cover object-top">
-<span class="absolute top-2 left-2 bg-red-600 text-white text-xs">※未許可</span>
+            <div class="w-full aspect-[4/3] overflow-hidden border-b flex border-ember-200 items-center justify-center">
+                <img src="./img/logo_yanai.png" alt="経営者対談" class=" object-contain">
+<!-- <span class="absolute top-2 left-2 bg-red-600 text-white text-xs">※未許可</span> -->
             </div>
             <div class="p-6">
                 <span class="inline-block bg-fire-100 text-fire-700 text-xs px-3 py-1 rounded-full font-bold mb-4">経営者対談</span>
                 <h3 class="text-xl font-black text-slate-900 mb-1">柳井電機工業株式会社</h3>
                 <p class="text-xs font-semibold text-slate-500 mb-4">代表取締役社長 柳井 智雄 氏</p>
-                <h3 class="text-xl font-black text-slate-900 mb-1">中小企業庁</h3>
-                <p class="text-xs font-semibold text-slate-500 mb-4">次長 山本 和徳 （未定）氏</p>
+                <h3 class="text-xl font-black text-slate-900 mb-1">株式会社船井総合研究所</h3>
+                <p class="text-xs font-semibold text-slate-500 mb-4">本部長 沓澤 翔太 氏</p>
                 <p class="text-sm text-slate-600 leading-relaxed">
                     「100 億企業が実践した経営のセンターピン」をテーマに、柳井氏と山本氏による豪華対談！100億企業化に向けた経営判断や成長過程の課題を深掘りし、自社成長のヒントを伝授します。
                 </p>
@@ -384,7 +465,7 @@
                     </div>
                     <div class="md:w-3/4">
                         <div class="inline-block bg-fire-600 text-white text-xs font-bold px-2 py-0.5 rounded mb-2">基調講演</div>
-                        <h3 class="text-lg font-bold text-slate-900 mb-1">テーマ「・・・」</h3>
+                        <h3 class="text-lg font-bold text-slate-900 mb-1 bg-yellow-400">テーマ「・・・」</h3>
                         <p class="text-sm text-slate-600">登壇者：中小企業庁 次長 山本 和徳 氏</p>
                     </div>
                 </div>
@@ -397,8 +478,7 @@
                     <div class="md:w-3/4">
                         <div class="inline-block bg-fire-600 text-white text-xs font-bold px-2 py-0.5 rounded mb-2">経営者対談</div>
                         <h3 class="text-lg font-bold text-slate-900 mb-1">100億企業が実践した経営のセンターピン</h3>
-                        <p class="text-sm text-slate-600">柳井電機工業株式会社 柳井 智雄 氏　×　中小企業庁 次長 山本 和徳(未定) 氏
-                        </p>
+                        <p class="text-sm text-slate-600">柳井電機工業株式会社 柳井 智雄 氏　×　株式会社船井総合研究所 本部長 沓澤 翔太 氏</p>
                     </div>
                 </div>
 
@@ -432,7 +512,7 @@
                     </div>
                     <div class="md:w-3/4">
                         <h3 class="text-lg font-bold text-slate-900 mb-1">支援施策紹介</h3>
-                        <p class="text-sm text-slate-600">
+                        <p class="text-sm text-slate-600 bg--600 bg-yellow-400">
                             登壇者：各支援機関や金融機関(未定)
                         </p>
                     </div>
@@ -602,14 +682,22 @@
 
     <!-- Footer -->
     <footer class="bg-slate-900 text-slate-400 py-8 text-center text-xs">
-        <!-- 大分県公式ホームページへのリンク・バナー -->
-        <div class="mb-6 flex justify-center">
+        <div class="mb-6 flex flex-col sm:flex-row justify-center items-center gap-4 px-4">
             <a href="https://www.pref.oita.jp/" target="_blank" rel="noopener noreferrer" 
-            class="inline-flex items-center space-x-2 bg-slate-800 hover:bg-slate-700 px-4 py-2 
-            rounded-lg transition duration-200 border border-slate-700">
+            class="inline-flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 px-4 py-2 
+            rounded-lg transition duration-200 border border-slate-700 w-full sm:w-auto">
                 <img src="https://www.pref.oita.jp/uploaded/image/380.gif" alt="大分県" class="h-6 w-auto bg-white p-0.5 rounded">
                 <span class="text-xs font-bold text-white hover:underline flex items-center">
                     大分県公式ホームページ
+                    <svg class="w-3 h-3 ml-1 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </span>
+            </a>
+            <a href="https://www.meti.go.jp/" target="_blank" rel="noopener noreferrer" 
+            class="inline-flex items-center justify-center space-x-2 bg-slate-800 hover:bg-slate-700 px-4 py-2 
+            rounded-lg transition duration-200 border border-slate-700 w-full sm:w-auto">
+                <img src="./img/logo_chusho.png" alt="中小企業庁" class="h-6 w-auto bg-white p-0.5 rounded">
+                <span class="text-xs font-bold text-white hover:underline flex items-center">
+                    中小企業庁公式ホームページ
                     <svg class="w-3 h-3 ml-1 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
                 </span>
             </a>
