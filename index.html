@@ -218,8 +218,26 @@
                 <!-- ニュース記事 1 -->
                 <article class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-ember-50/40 hover:bg-ember-100/50 transition border border-ember-100">
                     <div class="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
+                        <time class="text-xs font-bold text-slate-500">2026.09.16</time>
+                        <span class="inline-block bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded w-max whitespace-nowrap">お知らせ</span>
+                        <a href="https://prtimes.com/story/detail/Bkv8eyhNoNb" target="_blank" class="text-sm font-bold text-slate-800 hover:text-fire-600 transition">
+                            大分県庁の取り組み「中堅・100億企業創出」に関するインタビュー記事がPR TIMES STORYに掲載
+                        </a>
+                    </div>
+                </article>
+                <article class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-ember-50/40 hover:bg-ember-100/50 transition border border-ember-100">
+                    <div class="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
+                        <time class="text-xs font-bold text-slate-500">2026.09.16</time>
+                        <span class="inline-block bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded w-max whitespace-nowrap">お知らせ</span>
+                        <a href="#PRE-EVENT" class="text-sm font-bold text-slate-800 hover:text-fire-600 transition">
+                            なぜ大分県は100億企業創出を本気で目指すのか？県庁担当者対談インタビュー動画を公開
+                        </a>
+                    </div>
+                </article>
+                <article class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-ember-50/40 hover:bg-ember-100/50 transition border border-ember-100">
+                    <div class="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
                         <time class="text-xs font-bold text-slate-500">2026.08.31</time>
-                        <span class="inline-block bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded w-max">お知らせ</span>
+                        <span class="inline-block bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded w-max whitespace-nowrap">お知らせ</span>
                         <a href="https://prtimes.jp/main/html/rd/p/000000001.000189347.html" target="_blank" class="text-sm font-bold text-slate-800 hover:text-fire-600 transition line-clamp-1">
                             PR TIMESに本セミナーの開催案内を掲載いたしました。
                         </a>
@@ -228,7 +246,7 @@
                 <article class="flex flex-col sm:flex-row sm:items-center justify-between p-4 rounded-xl bg-ember-50/40 hover:bg-ember-100/50 transition border border-ember-100">
                     <div class="flex flex-col sm:flex-row sm:items-center space-y-1 sm:space-y-0 sm:space-x-4 mb-2 sm:mb-0">
                         <time class="text-xs font-bold text-slate-500">2026.08.17</time>
-                        <span class="inline-block bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded w-max">お知らせ</span>
+                        <span class="inline-block bg-slate-200 text-slate-700 text-[10px] font-bold px-2 py-0.5 rounded w-max whitespace-nowrap">お知らせ</span>
                         <a href="#news" class="text-sm font-bold text-slate-800 hover:text-fire-600 transition line-clamp-1">
                             「中堅・100億企業創出セミナー」の特設サイトを開設いたしました。
                         </a>
@@ -373,21 +391,28 @@
     <!-- ============================== -->
     <!-- Interview Movie Section        -->
     <!-- ============================== -->
-    <section class="py-16 md:py-20 bg-slate-900 text-white" >
+    <section id="PRE-EVENT" class="py-16 md:py-20 bg-slate-900 text-white" >
         <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <p class="text-amberGold-400 font-extrabold tracking-widest text-sm uppercase mb-2">PRE-EVENT MOVIE</p>
                 <h2 class="text-2xl sm:text-4xl font-serif-jp font-bold text-white">セミナー開催直前 インタービュー動画</h2>
                 <div class="w-20 h-1 bg-amberGold-400 mx-auto mt-4 rounded-full"></div>
                 <p class="text-slate-300 text-sm sm:text-base mt-4 max-w-2xl mx-auto">
-                    登壇者や地域牽引企業のリーダーによる、セミナー開催へ向けた期待と熱いメッセージを込めた特別インタビュー動画を順次公開いたします。
+                    登壇者や地域牽引企業のリーダーによる、セミナー開催へ向けた期待と熱いメッセージを込めた特別インタビュー動画を公開。
                 </p>
             </div>
 
             <!-- 動画枠（Coming Soon! 表示） -->
             <div class="max-w-3xl mx-auto" data-aos-delay="200">
                 <div class="relative aspect-video rounded-2xl overflow-hidden bg-slate-800 border-2 border-slate-700 shadow-2xl flex items-center justify-center group">
-                    <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+                    <iframe 
+                        class="w-full h-full border-0" 
+                        src="https://www.youtube.com/embed/CEKhPOktNjY" 
+                        title="なぜ大分県は100億企業創出を本気で目指すのか？県庁担当者対談インタビュー動画を公開" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                        allowfullscreen>
+                    </iframe>
+                    <!-- <div class="absolute inset-0 opacity-20 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:16px_16px]"></div>
                     
                     <div class="relative z-10 text-center px-4">
                         <div class="w-16 h-16 md:w-20 md:h-20 mx-auto mb-4 rounded-full bg-fire-600/30 border-2 border-fire-500 flex items-center justify-center backdrop-blur-sm">
@@ -398,7 +423,7 @@
                         <span class="inline-block bg-amberGold-400 text-slate-900 text-xs md:text-sm font-black px-4 py-1 rounded-full uppercase tracking-wider mb-2">Coming Soon!</span>
                         <h3 class="text-xl md:text-2xl font-bold text-white">動画公開まで楽しみにお待ちください</h3>
                         <p class="text-xs md:text-sm text-slate-400 mt-2">※近日中に公開予定です（順次アップロードされます）</p>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
